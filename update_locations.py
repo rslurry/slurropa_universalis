@@ -20,6 +20,9 @@ with open(FINPUT, 'r') as foo:
 location_data = C.update_climates(location_data)
 
 # Save out the modified location data
+if not os.path.exists(os.path.dirname(FOUTPUT)):
+    os.makedirs(os.path.dirname(FOUTPUT))
+
 with open(FOUTPUT, 'w') as foo:
     foo.write(location_data)
 

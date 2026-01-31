@@ -150,6 +150,9 @@ if csu_match:
 else:
     raise ValueError("CSU tag block not found.")
 
+if not os.path.exists(os.path.dirname(FOUTPUT)):
+    os.makedirs(os.path.dirname(FOUTPUT))
+
 with open(FOUTPUT, "w") as foo:
     foo.write(country_data)
 

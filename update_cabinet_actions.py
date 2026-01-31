@@ -1,7 +1,6 @@
 #! /usr/bin/env python
 
 import sys, os
-from functools import partial
 from dotenv import load_dotenv
 import re
 
@@ -45,6 +44,9 @@ for iaction, action in enumerate(CABINET_ACTIONS):
     cab_action = pattern.sub(REPLACEMENTS[iaction], cab_action)
     
     # Save out the modified cabinet action
+    if not os.path.exists(os.path.dirname(FOUTPUT)):
+        os.makedirs(os.path.dirname(FOUTPUT))
+
     with open(FOUTPUT, 'w') as foo:
         foo.write(cab_action)
 
