@@ -1,0 +1,97 @@
+development = {
+		khayrij = 3
+		dha_sohis = 3
+		tarim = 8
+		sayun = 8
+		arrayda = 3
+		al_khuraybah = 3
+		huraydah = 3
+		rakhyah = 3
+		shibam = 8
+		
+		al_shihr = 5
+		al_mukalla = 8
+		birali = 5
+		hajar = 1
+		balhaf = 5
+		azzan = 5
+		habban = 3
+		
+		qishn = 5
+		khalfut = 1
+		raysut = 3
+		dhufar = 5
+		mirbat = 5
+		
+		shabwa = 1
+		nisab = 3
+		markha = 3
+		bayhan = 1
+		al_bayda_yemen = 5
+		
+		jurrah = 5
+		ahwar = 1
+		lawdar = 5
+		shuqra = 1
+		al_qara = 10
+		
+		zinjibar = 5
+		adan = 1
+		lahj = 5
+		al_mafalis = 1
+		al_arah = 1
+		
+		al_mandab = 1
+		mawza = 5
+		taizz = 10
+		al_mukha = 8
+		hays = 8
+		
+		yahr = 10
+		musaymir = 10
+		ibb = 10
+		dhafar = 10
+		juban = 10
+		
+		radaa = 5
+		dhamar = 10
+		harib = 3
+		marib = 5
+		baraqish = 3
+		
+		zabid = 8
+		al_ghulayfiqah = 8
+		mudhaykirah = 5
+		mikhlaf_al_hubishiyah = 10
+		as_salafiyah = 10
+		
+		hutayb = 10
+		kawkaban = 5
+		hudaida = 8
+		as_salif = 8e
+		al_luhayyah = 3
+		
+		hajjah = 8
+		al_hirda = 3
+		harad_asir = 3
+		khamir = 8
+		shaharah = 8
+		
+		sana_yemen = 10
+		thula = 10
+		huth = 3
+		sadah = 5
+		dhahran = 3
+		main = 3
+		al_mahjal = 1
+		suq_al_ghinan = 1
+		najran = 8
+		al_husayniyah = 3
+		
+		al_khosuf = 8
+		jazan = 8
+		farasan = 1
+		sabt_bani_bishr = 10 
+		sabya = 8
+		al_haqu = 8 
+	}

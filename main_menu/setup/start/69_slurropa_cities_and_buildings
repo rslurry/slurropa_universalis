@@ -1,0 +1,32 @@
+locations={
+	sana_yemen = { rank = city 		town_setup = levant_city }
+	zabid = { rank = town 	town_setup = levant_town }
+	sadah = { rank = town 	town_setup = levant_town } 
+	sayun  = { rank = town 	town_setup = levant_town } 
+	}
+
+
+building_manager = {
+	terraces	= { tag = YEM level = 1 location = sayun } 
+	terraces	= { tag = YEM level = 1 location = tarim }
+	terraces	= { tag = YEM level = 1 location = shibam }
+	terraces	= { tag = YEM level = 1 location = al_mukalla }
+	terraces	= { tag = YEM level = 1 location = al_qara }
+	terraces	= { tag = YEM level = 1 location = taizz }
+	terraces	= { tag = YEM level = 1 location = yahr }
+	terraces	= { tag = YEM level = 1 location = musaymir }
+	terraces	= { tag = YEM level = 1 location = ibb }
+	terraces	= { tag = YEM level = 1 location = dhafar }
+	terraces	= { tag = YEM level = 1 location = juban }
+	terraces	= { tag = YEM level = 1 location = dhamar }
+	terraces	= { tag = YEM level = 1 location = mikhlaf_al_hubishiyah }
+	terraces	= { tag = YEM level = 1 location = as_salafiyah }
+	terraces	= { tag = YEM level = 1 location = hutayb }
+	terraces	= { tag = YEM level = 1 location = hajjah }
+	terraces	= { tag = YEM level = 1 location = khamir }
+	terraces	= { tag = YEM level = 1 location = shaharah }
+	terraces	= { tag = YEM level = 1 location = sana_yemen }
+	terraces	= { tag = YEM level = 1 location = thula }
+	terraces	= { tag = YEM level = 1 location = sabt_bani_bishr }
+	terraces	= { tag = YEM level = 1 location = al_haqu }
+	}
