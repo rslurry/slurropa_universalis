@@ -1,0 +1,3 @@
+slurropa_infiltrate_administration_cost = {
+	spy_network = 75
+}
