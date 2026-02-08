@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import sys, os
-from lib import climates as C
+from lib import locations as L
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -17,7 +17,7 @@ with open(FINPUT, 'r') as foo:
     location_data = foo.read()
 
 # Update the location data
-location_data = C.update_climates(location_data)
+location_data = L.update_location_properties(location_data)
 
 # Save out the modified location data
 if not os.path.exists(os.path.dirname(FOUTPUT)):
