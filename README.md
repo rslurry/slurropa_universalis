@@ -36,7 +36,7 @@ Big thank you to **Bastiram** for contributions to this mod.
 
 # **Cabinet Actions**
 
-### **Expel people** (now more limited)
+### **Expel people:** now more limited
 The province must have:
 - the country's capital, **or**
 - at least 50 control in all locations, **or**
@@ -46,7 +46,7 @@ The province must have:
 
 # **Covert Actions**
 
-### **Infiltrate Administration** (nerfed)
+### **Infiltrate Administration:** nerfed this OP covert action
 - Increased spy network cost from 50 to 75.
 - Duration is 1 year, with a cooldown of 3 years, meaning you cannot use this on multiple countries at the same time.
 - Moved to 3rd age, locked behind printing press.
@@ -54,7 +54,9 @@ The province must have:
 
 ---
 
-# **Treaty of Tordesillas**
+# **Situations**
+
+### **Treaty of Tordesillas**
 - Disabled this very poorly implemented situation until Paradox fixes it into something usable.
 
 ---
@@ -84,3 +86,6 @@ Yemen was historically the Arabian peninsula’s breadbasket, yet Paradox treats
 
 - Boosted development of the region and added terraces to locations that historically had terracing or terrace-like agriculture methods. *(Contributed by Bastiram)*
 - Turned Sana’a into the city it was at that time; turned Zabid, Sa’da, and Say’un into towns for historical reasons. *(Contributed by Bastiram)*
+
+# **Want to contribute to the mod?**
+I'd love to have more help with this mod, as there are a lot of things that can be improved in EU5 that I won't have time to do until much later on. If you're interested in contributing, familiarize with the code structure, and open an issue to discuss the changes you want to contribute.  Once we have a plan in place, then you can submit a pull request with those changes.  Ambitious people may go ahead and submit a pull request without first discussing it, but there is no guarantee it will be accepted without further changes.  Thanks!
