@@ -2,7 +2,7 @@ locations={
 	sana_yemen = { rank = city 		town_setup = levant_city }
 	zabid = { rank = town 	town_setup = levant_town }
 	sadah = { rank = town 	town_setup = levant_town } 
-	sayun  = { rank = town 	town_setup = levant_town } 
+	shabwa  = { rank = town 	town_setup = levant_town } 
 	}
 
 
@@ -29,4 +29,8 @@ building_manager = {
 	terraces	= { tag = YEM level = 1 location = thula }
 	terraces	= { tag = YEM level = 1 location = sabt_bani_bishr }
 	terraces	= { tag = YEM level = 1 location = al_haqu }
+	terraces	= { tag = YEM level = 1 location = al_haqu }
+	terraces	= { tag = YEM level = 1 location = najran }
+	terraces	= { tag = YEM level = 1 location = dhahran }
+	terraces	= { tag = YEM level = 1 location = mudhaykirah }
 	}
