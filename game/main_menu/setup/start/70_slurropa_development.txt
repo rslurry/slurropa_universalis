@@ -1,4 +1,5 @@
 development = {
+#Yemen increased development
 		khayrij = 3
 		dha_sohis = 3
 		tarim = 8
@@ -68,7 +69,7 @@ development = {
 		hutayb = 10
 		kawkaban = 5
 		hudaida = 8
-		as_salif = 8e
+		as_salif = 8
 		al_luhayyah = 3
 		
 		hajjah = 8
@@ -81,11 +82,11 @@ development = {
 		thula = 10
 		huth = 3
 		sadah = 5
-		dhahran = 3
+		dhahran = 10
 		main = 3
-		al_mahjal = 1
-		suq_al_ghinan = 1
-		najran = 8
+		al_mahjal = 3
+		suq_al_ghinan = 3
+		najran = 10
 		al_husayniyah = 3
 		
 		al_khosuf = 8
@@ -93,5 +94,5 @@ development = {
 		farasan = 1
 		sabt_bani_bishr = 10 
 		sabya = 8
-		al_haqu = 8 
-	}
+		al_haqu = 8 	
+		}

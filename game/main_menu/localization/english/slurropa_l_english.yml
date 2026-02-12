@@ -1,3 +1,17 @@
 ﻿l_english:
  slurropa_infiltrate_administration: "Infiltrate Administration"
  slurropa_infiltrate_administration_desc: "You didn't think I would let you use this indefinitely, did you?"
+ STATIC_MODIFIER_NAME_yemen_highlands: "Highlands of Yemen"
+ STATIC_MODIFIER_DESC_yemen_highlands: "The Highlands of Yemen receive sufficient water during the wet months to support agriculture and have been the center of a unique civilisation for millennia."
+
+ STATIC_MODIFIER_NAME_yemen_arable: "Arable Land"
+ STATIC_MODIFIER_DESC_yemen_arable: "Fertile alluvial soils make this location especially suited for agriculture and human settlement. Terraced farms bring dates, pomegranates, millet, coffee, and other bounties from this rugged landscape."
+
+ STATIC_MODIFIER_NAME_yemen_irrigated: "Irrigated Land"
+ STATIC_MODIFIER_DESC_yemen_irrigated: "This landscape has been shaped by generations of human labor, expanding the amount of soil under cultivation along the seasonal riverbeds known as wadis."
+
+ STATIC_MODIFIER_NAME_yemen_meadows: "Meadows and Pastures"
+ STATIC_MODIFIER_DESC_yemen_meadows: "Dominated by meadows and pastures, this land is less suited for agriculture but provides excellent opportunities for grazing and animal husbandry."
+
+ STATIC_MODIFIER_NAME_yemen_rough: "Rough Grazing" 
+ STATIC_MODIFIER_DESC_yemen_rough: "The lands of Yemen are marked by extreme contrasts, and every usable area is valuable. Though unsuited for agriculture, this land remains far more productive than the surrounding deserts."

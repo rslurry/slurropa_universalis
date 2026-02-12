@@ -1,0 +1,32 @@
+road_network = {
+### The Incense Road from Bir Ali, to S'anaa
+	birali = hajar
+	hajar = shabwa
+	shabwa = nisab
+	nisab = bayhan
+	bayhan = harib
+	harib = marib
+	marib = sana_yemen
+### Northern branch to Sa'da
+	sana_yemen = thula
+	thula = huth
+	huth = sadah
+### Western Branch to Taizz and then to the Red Sea
+	marib = radaa
+	radaa = juban
+	juban = ibb
+	ibb = musaymir
+	musaymir = taizz
+	taizz = hays
+	hays = zabid
+	taizz = al_mukha
+
+	
+
+
+
+
+
+
+
+}
