@@ -82,10 +82,12 @@ Qusqu, the tag that historically wins out in western South America, is unplayabl
 # **Historicalness**
 
 ### **Yemen**
-Yemen was historically the Arabian peninsula’s breadbasket, yet Paradox treats it as a backwater. We fixed that (more changes TBD to fix pop capacity issues).
+Yemen was historically the Arabian peninsula’s breadbasket, yet Paradox treats it as a backwater. Bastiram contributed the following changes:
 
-- Boosted development of the region and added terraces to locations that historically had terracing or terrace-like agriculture methods. *(Contributed by Bastiram)*
-- Turned Sana’a into the city it was at that time; turned Zabid, Sa’da, and Say’un into towns for historical reasons. *(Contributed by Bastiram)*
+- Boosted development of the region and added terraces to locations that historically had terracing or terrace-like agriculture methods.
+- Turned Sana’a into the city it was at that time; turned Zabid, Sa’da, and Šabwa into towns for historical reasons.
+- Added static modifiers to boosts population capacity in some areas, to represent historical land usage.
+- Added roads that were historically used for trade purposes.
 
 ---
 
