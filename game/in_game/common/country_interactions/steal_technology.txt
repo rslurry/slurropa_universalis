@@ -45,29 +45,25 @@
 	            add = 25
 	            max = 100
 	        }
-	        effects = {
-		        scope:actor = {
-		            # Add timed modifier to boost research speed
-			        add_country_modifier = {
-                       modifier = slurropa_stole_tech
-                       years = 10
-                       mode = replace
-                       recalculate_immediately = yes
-                    }
-		        }
-		    }
+	        scope:actor = {
+	            # Add timed modifier to boost research speed
+		        add_country_modifier = {
+                   modifier = slurropa_stole_tech
+                   years = 10
+                   mode = replace
+                   recalculate_immediately = yes
+                }
+	        }
 		}
 		random = {
 		    chance = 50
-		    effects = {
-		        scope:recipient = {	
-		            # Reduce target's opinion of the thief
-		            add_opinion = {
-                       modifier = slurropa_steal_tech_opinion
-                       target = scope:actor
-                    }
-		        }
-		    }
+	        scope:recipient = {	
+	            # Reduce target's opinion of the thief
+	            add_opinion = {
+                   modifier = slurropa_steal_tech_opinion
+                   target = scope:actor
+                }
+	        }
 		}
 	}
 }	
