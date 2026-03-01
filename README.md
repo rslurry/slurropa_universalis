@@ -28,6 +28,7 @@ Big thank you to **Bastiram** for contributions to this mod.
 ---
 
 # **Great Power Score**
+- Changed defined base GP value from 4 to 6. This results in 11 GPs at game start in v1.0.x.
 - Reduced the influence of population to 50% of the base game's value. Population influences income, which is also a GP score factor, and this double dipping leads to dumb results (like a country in eastern China having more GP score from population than any other GP has in total score, despite that they would get whooped by half of those other GPs).
 - Reduced country rank's influence by 50% (e.g., empire changed from 200 to 100).
 - Reduced HRE Emperorship's influence from 250 to 150.
@@ -52,6 +53,11 @@ The province must have:
 - Moved to 3rd age, locked behind printing press.
 - Note: due to Paradox’s infinite wisdom, the vanilla Infiltrate Administration covert action is impossible to remove from the UI because it is hardcoded, so you will see **two** Infiltrate Administrations — the vanilla one (999 cost, unusable) and the modded one (75 cost, age 3 requirement).
 
+### **Steal Technology:** disabled this until Paradox gives us better triggers so it can be balanced. At that point, it will function like so:
+- Only allowed if the target nation has more techs in the current age.
+- Has a chance of success depending on the difference in number of techs in that age (bigger difference = higher chance of success). If successful, grant a 10-year modifier that boosts monthly research (rather than a flat boost as in vanilla).
+- 50% chance of being discovered, which will make the targeted country upset with the country that stole/attempted to steal tech.
+
 ---
 
 # **Situations**
@@ -70,12 +76,16 @@ The philosophy of this mod is that a location’s climate should reflect where h
 
 ---
 
-# **Borders**
+# **Countries**
 
 ### **Qusqu**
 Qusqu, the tag that historically wins out in western South America, is unplayable at present. The devs intend for you to ally Ayarmaca, but they failed to account for the fact that Ayarmaca will probably rival you and definitely attack you 100% of the time before you can ally them. Qusqu simply does not have enough pops/levies to survive any opening war unless you get very lucky.  Changes:
 - Pisaq transferred from Ayarmaca to Qusqu. Ayarmaca’s capital moved to Urupampa.
 - Pikillaqta (only location of Pinaguq tag) absorbed into Qusqu.
+
+### **France**
+- Player appanages always have their requests granted.
+- Forming France requires directly owning 50% of the region, and owning at least 75% of the region directly or through subjects.
 
 ---
 
