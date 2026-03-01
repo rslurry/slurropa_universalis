@@ -1,0 +1,73 @@
+﻿steal_technology =  { 
+	type = diplomacy
+	category = CATEGORY_COVERT_ACTIONS
+
+	diplomatic_cost = steal_technology_cost
+
+	allow = {
+	    always = no
+	}
+
+	block_when_at_war = no
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			num_of_advances_researched > scope:actor.num_of_advances_researched
+		}
+        enabled = {
+            value = {
+                add = num_of_advances_researched
+                subtract = scope:actor.num_of_advances_researched
+            }
+            value >= 5
+			OR = {
+			    is_human = yes
+		        is_subject = no
+		        is_subject_type = tributary
+			}
+		}
+	}
+
+	effect = {
+	    random = {
+	        chance = {
+	            # Chance of 25 + (3 * difference in number of advances)
+	            # If they have at least 25 more advances than you, it's a guaranteed success
+	            add = scope:recipient.num_of_advances_researched
+	            subtract = scope:actor.num_of_advances_researched
+	            multiply = 3
+	            add = 25
+	            max = 100
+	        }
+	        effects = {
+		        scope:actor = {
+		            # Add timed modifier to boost research speed
+			        add_country_modifier = {
+                       modifier = slurropa_stole_tech
+                       years = 10
+                       mode = replace
+                       recalculate_immediately = yes
+                    }
+		        }
+		    }
+		}
+		random = {
+		    chance = 50
+		    effects = {
+		        scope:recipient = {	
+		            # Reduce target's opinion of the thief
+		            add_opinion = {
+                       modifier = slurropa_steal_tech_opinion
+                       target = scope:actor
+                    }
+		        }
+		    }
+		}
+	}
+}	
