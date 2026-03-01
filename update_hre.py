@@ -78,7 +78,6 @@ with open(FINPUT_DISMANTLE, 'r') as foo:
     hre_dismantle_data = foo.read()
 
 
-count_limit=400 # min # HRE provinces to disable dismantle peace deal
 # Find the allow = { start
 m = re.search(r'allow\s*=\s*\{', hre_dismantle_data)
 if not m:
@@ -123,9 +122,31 @@ inner = '\n'.join(inner_splt)
 new_block = (
     f"allow = {{\n"
     f"{inner_indent}OR = {{{inner}\n"
+    f"{inner_indent}    AND = {{\n"
+    f"{inner_indent}        international_organization:hre = {{\n"
+    f"{inner_indent}            any_international_organization_owned_location = {{\n"
+    f"{inner_indent}                count < 800\n"
+    f"{inner_indent}            }}\n"
+    f"{inner_indent}            any_international_organization_owned_location = {{\n"
+    f"{inner_indent}                owner ?= {{ NOT = {{ is_member_of_international_organization = international_organization:hre }} }}\n"
+    f"{inner_indent}                percent >= 0.4\n"
+    f"{inner_indent}            }}\n"
+    f"{inner_indent}        }}\n"
+    f"{inner_indent}    }}\n"
+    f"{inner_indent}    AND = {{\n"
+    f"{inner_indent}        international_organization:hre = {{\n"
+    f"{inner_indent}            any_international_organization_owned_location = {{\n"
+    f"{inner_indent}                count < 600\n"
+    f"{inner_indent}            }}\n"
+    f"{inner_indent}            any_international_organization_owned_location = {{\n"
+    f"{inner_indent}                owner ?= {{ NOT = {{ is_member_of_international_organization = international_organization:hre }} }}\n"
+    f"{inner_indent}                percent >= 0.2\n"
+    f"{inner_indent}            }}\n"
+    f"{inner_indent}        }}\n"
+    f"{inner_indent}    }}\n"
     f"{inner_indent}    international_organization:hre = {{\n"
     f"{inner_indent}        any_international_organization_owned_location = {{\n"
-    f"{inner_indent}            count < {count_limit}\n"
+    f"{inner_indent}            count < 400\n"
     f"{inner_indent}        }}\n"
     f"{inner_indent}    }}\n"
     f"{inner_indent}}}\n"
