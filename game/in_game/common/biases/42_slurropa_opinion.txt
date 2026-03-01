@@ -1,0 +1,5 @@
+slurropa_steal_tech_opinion = {
+	value = -50
+	yearly_decay = 1
+	min = -200
+}
