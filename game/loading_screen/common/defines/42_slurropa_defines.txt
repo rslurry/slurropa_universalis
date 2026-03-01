@@ -1,4 +1,5 @@
 NDiplomacy = {
 	TRUCE_YEARS = 6 # doubled time
 	SCALED_TRUCE_YEARS = 10 # doubled time
+	BASE_GREAT_POWER = 6 # 1.5x base number
 }
