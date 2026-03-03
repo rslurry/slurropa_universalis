@@ -2,4 +2,3 @@ ribe
 varde
 kolding
 thisted
-slesvig
