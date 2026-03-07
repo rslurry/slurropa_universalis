@@ -6,22 +6,6 @@ import re
 
 load_dotenv()
 
-##### International Organization file
-FHRE = os.path.join("in_game", "common", "international_organizations", "hre.txt")
-FINPUT_HRE  = os.path.join(os.getenv("EU5_GAME_FOLDER"), FHRE)
-FOUTPUT_HRE = os.path.join(os.getenv("SLURROPA_FOLDER"), FHRE)
-
-with open(FINPUT_HRE, 'r') as foo:
-    hre_data = foo.read()
-
-hre_data = hre_data.replace("great_power_score_exempt_from_forfeit = 250", "great_power_score_exempt_from_forfeit = 150")
-
-if not os.path.exists(os.path.dirname(FOUTPUT_HRE)):
-    os.makedirs(os.path.dirname(FOUTPUT_HRE))
-
-with open(FOUTPUT_HRE, 'w') as foo:
-    foo.write(hre_data)
-
 
 ##### International Organization Special Statuses file
 FHRE_SPECSTATUS = os.path.join("in_game", "common", "international_organization_special_statuses", "hre.txt")
