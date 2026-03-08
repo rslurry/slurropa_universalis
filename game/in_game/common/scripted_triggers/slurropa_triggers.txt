@@ -11,3 +11,40 @@ expel_people_valid_target = {
         NOT = { any_location_in_province = { local_control < 0.5 } }
     }
 }
+
+is_capital_copperworking = {
+	capital ?= {
+		OR = {
+		    # Mexico
+			region = region:mesoamerica_region
+			area = area:xalisco_area
+			area = area:zacatecas_area
+			region = region:central_america_region
+			# South America
+			region = region:andes_region
+			region = region:la_plata_region
+			# Mississippi River valley
+			area = area:louisiana_area
+			area = area:arkansas_area
+			area = area:missouri_area
+			area = area:iowa_area
+			area = area:illinois_area
+			area = area:kentucky_area
+			area = area:tennessee_area
+			area = area:mississippi_area
+			area = area:central_plains_area
+			# Great Lakes
+			area = area:wisconsin_area
+			area = area:michigan_area
+			area = area:indiana_area
+			area = area:ohio_area
+			area = area:westsylvania_area
+			area = area:haudenosaunee_area
+			area = area:eastern_ontario_area
+			area = area:western_ontario_area
+			area = area:northern_ontario_area
+			area = area:northwestern_ontario_area
+			area = area:superior_area
+		}
+	}
+}
