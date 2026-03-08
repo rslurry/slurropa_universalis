@@ -8,6 +8,8 @@ Big thank you to **Bastiram** for contributions to this mod.
 
 # **Wars**
 - Truce lengths have been doubled vs. base game.
+- Nerfed Claim Throne CB for defenders by removing the -75% conquer warscore cost. This should encourage people to use it for RP reasons rather than ignore it due to the major risk if they lose the war.
+- Coalition CB: reduced attacker warscore cost reductions from -75% to -40% for conquest and -60% for subjugation.
 
 ---
 
@@ -23,15 +25,14 @@ Big thank you to **Bastiram** for contributions to this mod.
 ---
 
 # **Hegemons**
-- Disabled hegemon diplomatic actions because they are incredibly toxic and dumb for MP since you cannot refuse them. This will be removed once Paradox pushes an update to allow targets to refuse the hegemon's diplo action.
+- Disabled hegemon diplomatic actions because they are incredibly toxic and dumb for MP since refusing them results in a free CB for the hegemon, who doesn't need a free CB. Will consider re-enabling them in the future once Paradox better balances this.
 
 ---
 
 # **Great Power Score**
 - Changed defined base GP value from 4 to 6. This results in 11 GPs at game start in v1.0.x.
 - Reduced the influence of population to 50% of the base game's value. Population influences income, which is also a GP score factor, and this double dipping leads to dumb results (like a country in eastern China having more GP score from population than any other GP has in total score, despite that they would get whooped by half of those other GPs).
-- Reduced country rank's influence by 50% (e.g., empire changed from 200 to 100).
-- Reduced HRE Emperorship's influence from 250 to 150.
+- Reduced influence of army levies by 2.5x.
 
 ---
 
@@ -98,6 +99,13 @@ Yemen was historically the Arabian peninsula’s breadbasket, yet Paradox treats
 - Turned Sana’a into the city it was at that time; turned Zabid, Sa’da, and Šabwa into towns for historical reasons.
 - Added static modifiers to boosts population capacity in some areas, to represent historical land usage.
 - Added roads that were historically used for trade purposes.
+
+### **Denmark**
+- Adjusted topography, vegetation, and RGOs to better match this time in history. (Thank you Bastiram for contributing.)
+- Expanded Danish culture to southern Denmark.
+
+### **Americas**
+**Copperworking** in the Americas historically occurred beyond just Mexico, but Paradox only gave that advance to Mexico. It has now been extended to the Andes, La Plata, the Mississippi River Valley, and (this is for balance+historical capabilities) the Great Lakes.
 
 ---
 
