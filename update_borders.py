@@ -54,39 +54,39 @@ if aya_match:
     aya_body = aya_match.group(2)
     aya_end = aya_match.group(3)
 
-    occ_pattern = r"(own_control_core\s*=\s*\{)([^}]*)\}"
+    #occ_pattern = r"(own_control_core\s*=\s*\{)([^}]*)\}"
+    occ_pattern = r"(\s*)(own_control_core\s*=\s*\{)([^}]*)\}"
 
     item_to_remove = "pisaq"
     new_capital = "urupampa"
 
     def occ_replacer(match):
-        start = match.group(1)
-        inner = match.group(2)
+        indent = match.group(1)
+        start = match.group(2)
+        inner = match.group(3)
 
         # Detect indentation of inner items
         inner_indent_match = re.search(r"\n(\s*)\S", inner)
         inner_indent = inner_indent_match.group(1) if inner_indent_match else "        "
-
-        # Normalize items
+        
+        # Normalize items, remove target item
         items = inner.split()
-
-        # Remove the target item
         items = [i for i in items if i != item_to_remove]
 
         # Rebuild block
         new_inner = (
             "\n" + inner_indent + " ".join(items) +
-            "\n" + inner_indent[:-4]  # closing brace indentation
+            indent + "}"  # closing brace indentation
         )
 
-        return f"{start}{new_inner}}}"
+        return indent + start + new_inner
 
     aya_body = re.sub(occ_pattern, occ_replacer, aya_body, flags=re.DOTALL)
 
     # Move their capital
     capital_pattern = r"(capital\s*=\s*)(\S+)"
 
-    aya_body = re.sub(capital_pattern, r"\1" + new_capital, aya_body)
+    aya_body = re.sub(capital_pattern, r"\1" + new_capital, aya_body, count=1)
 
     # Rebuild the full AYA block
     new_aya_block = f"{aya_start}{aya_body}{aya_end}"
@@ -140,7 +140,7 @@ if csu_match:
 
         return f"{start}{new_inner}}}"
 
-    new_csu_body = re.sub(occ_pattern, occ_replacer, csu_body, flags=re.DOTALL)
+    new_csu_body = re.sub(occ_pattern, occ_replacer, csu_body, flags=re.DOTALL, count=1)
 
     # Rebuild the CSU block
     new_csu_block = f"{csu_start}{new_csu_body}{csu_end}"
